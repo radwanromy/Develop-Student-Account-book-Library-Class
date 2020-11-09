@@ -45,6 +45,9 @@ namespace Lab_6
             b.ShowInfo();
             Console.WriteLine();
             Console.WriteLine();
+            Borrow bor = new Borrow("Borrowed", "HP2", "JKR", "002", "Ad", 100);
+            bor.ShowBorrowedBookInfo();
+            bor.ShowStudentNameAndBookInfo(b);
 
         }
     }

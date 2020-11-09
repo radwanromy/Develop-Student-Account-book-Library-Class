@@ -34,9 +34,17 @@ namespace Lab_6
             get { return department; }
             set { department = value; }
         }
-        
+        private Borrow[] accounts;
+        private int bookCount;
+        public int BookCount
+        {
+            get { return bookCount; }
+            set { bookCount = value; }
+        }
         public Student()
         {
+            accounts = new Borrow[10];
+            bookCount = 0;
             Console.WriteLine("Student Default");
         }
         public Student(string name, string id, string department, float cgpa)
@@ -46,6 +54,23 @@ namespace Lab_6
             this.department = department;
             this.cgpa = cgpa;
             Console.WriteLine("Student Valued Constructor");
+            accounts = new Borrow[10];
+            bookCount = 0;
+        }
+        public void StudentBorrowedBook(params Borrow[] accounts)
+        {
+            foreach (var a in accounts)
+            {
+                if (bookCount < 10)
+                {
+                    this.accounts[bookCount++] = a;
+                    Console.WriteLine("Book Added");
+                }
+                else
+                {
+                    Console.WriteLine("Cannot Add Book:  " + a.BookInfo);
+                }
+            }
         }
         public void ShowInfo()
         {

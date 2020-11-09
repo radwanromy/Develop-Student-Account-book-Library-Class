@@ -55,6 +55,7 @@ namespace Lab_6
                 balance -= amount;
                 Console.Write(amount+" Amount ");
                 Console.WriteLine("added the amount in account number "+accNo);
+                
             }
             else
                 Console.WriteLine("Insufficient Balance");
