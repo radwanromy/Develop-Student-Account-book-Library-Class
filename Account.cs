@@ -31,6 +31,7 @@ namespace Lab_6
             this.name = name;
             this.accNo = accNo;
             this.balance = balance;
+            Console.WriteLine("Account Valued Constructor");
 
         }
         public void Deposit(double amount)

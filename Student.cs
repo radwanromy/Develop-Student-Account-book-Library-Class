@@ -45,7 +45,7 @@ namespace Lab_6
             this.id = id;
             this.department = department;
             this.cgpa = cgpa;
-            Console.WriteLine("Student 1 parameter");
+            Console.WriteLine("Student Valued Constructor");
         }
         public void ShowInfo()
         {

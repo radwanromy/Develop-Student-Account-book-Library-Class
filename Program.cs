@@ -22,6 +22,12 @@ namespace Lab_6
             Console.WriteLine();
             Account a = new Account("Radwan","1212",11000);
             a.ShowInfo();
+            Console.WriteLine();
+            Console.WriteLine("Book Information");
+            Console.WriteLine();
+            Console.WriteLine();
+            Book b = new Book("HP", "JKR", "001","Ad");
+            b.ShowInfo();
         }
     }
 }
