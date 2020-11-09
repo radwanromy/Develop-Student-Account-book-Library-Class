@@ -23,6 +23,7 @@ namespace Lab_6
             Console.WriteLine();
             Account a = new Account("Radwan","1212",11000);
             a.ShowInfo();
+            a.Transfer(1000, "1212");
             Console.WriteLine();
             Console.WriteLine("Book Information");
             Console.WriteLine();
@@ -36,6 +37,15 @@ namespace Lab_6
             Console.WriteLine();
             Console.WriteLine("Added Book Information");
             l.ShowInfo();
+            Console.WriteLine();
+            Console.WriteLine();
+            b.TotalBooks(l);
+            Console.WriteLine();
+            Console.WriteLine("List of all book information");
+            b.ShowInfo();
+            Console.WriteLine();
+            Console.WriteLine();
+
         }
     }
 }

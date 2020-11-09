@@ -50,12 +50,18 @@ namespace Lab_6
             get { return bookCount; }
             set { bookCount = value; }
         } */
-
+        private Library[] accounts;
+        private int bookCount;
+        public int BookCount
+        {
+            get { return bookCount; }
+            set { bookCount = value; }
+        }
         public Book()
         {
-            //accounts = new Book[10];
-            //bookCount = 0;
-            Console.WriteLine("Student Default");
+            accounts = new Library[10];
+            bookCount = 0;
+            Console.WriteLine("Book Default");
         }
         public Book(string bookName, string bookAuthor, string bookId, string bookType, int bookCopy)
         {
@@ -65,6 +71,23 @@ namespace Lab_6
             this.bookType = bookType;
             this.bookCopy = bookCopy;
             Console.WriteLine("Book Valued Constructor");
+            accounts = new Library[10];
+            bookCount = 0;
+        }
+        public void TotalBooks(params Library[] accounts)
+        {
+            foreach (var a in accounts)
+            {
+                if (bookCount < 10)
+                {
+                    this.accounts[bookCount++] = a;
+                    Console.WriteLine("List of all books");
+                }
+                else
+                {
+                    Console.WriteLine("Cannot Add Book:  " + a.TotalBook);
+                }
+            }
         }
         /*public void AddBook(params Book[] accounts)
         {

@@ -53,8 +53,8 @@ namespace Lab_6
             if (amount < balance)
             {
                 balance -= amount;
-                Console.Write(amount+"Ammount ");
-                Console.WriteLine("added the amount in account number"+accNo);
+                Console.Write(amount+" Amount ");
+                Console.WriteLine("added the amount in account number "+accNo);
             }
             else
                 Console.WriteLine("Insufficient Balance");
