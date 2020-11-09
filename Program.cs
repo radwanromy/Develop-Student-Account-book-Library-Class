@@ -33,13 +33,13 @@ namespace Lab_6
             Library l = new Library("GK", "Dhaka", 1200);
             Console.WriteLine();
             Console.WriteLine();
-            l.AddBook(b);
+            l.AddNewBook(b);
             Console.WriteLine();
             Console.WriteLine("Added Book Information");
-            l.ShowInfo();
+            l.ShowLibInfo();
             Console.WriteLine();
             Console.WriteLine();
-            b.TotalBooks(l);
+            b.ShowAllBooks(l);
             Console.WriteLine();
             Console.WriteLine("List of all book information");
             b.ShowInfo();

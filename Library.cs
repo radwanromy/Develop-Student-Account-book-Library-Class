@@ -51,7 +51,7 @@ namespace Lab_6
             accounts = new Book[10];
             bookCount = 0;
         }
-        public void AddBook(params Book[] accounts)
+        public void AddNewBook(params Book[] accounts)
         {
             foreach (var a in accounts)
             {
@@ -66,7 +66,16 @@ namespace Lab_6
                 }
             }
         }
-        public void ShowInfo()
+        public void DeleteBook(int bid)
+        {
+            if (bid == totalBook)
+            {
+                totalBook -= bid;
+            }
+            else
+                Console.WriteLine("The Book is not available in Library");
+        }
+        public void ShowLibInfo()
         {
             Console.WriteLine("Library Name: " + libName);
             Console.WriteLine("Library Address: " + libAddress);

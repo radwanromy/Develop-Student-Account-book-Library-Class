@@ -74,7 +74,7 @@ namespace Lab_6
             accounts = new Library[10];
             bookCount = 0;
         }
-        public void TotalBooks(params Library[] accounts)
+        public void ShowAllBooks(params Library[] accounts)
         {
             foreach (var a in accounts)
             {
