@@ -10,6 +10,7 @@ namespace Lab_6
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Student Information");
             Console.WriteLine();
             Console.WriteLine();
@@ -26,8 +27,15 @@ namespace Lab_6
             Console.WriteLine("Book Information");
             Console.WriteLine();
             Console.WriteLine();
-            Book b = new Book("HP", "JKR", "001","Ad");
+            Book b = new Book("HP", "JKR", "001","Ad",3);
             b.ShowInfo();
+            Library l = new Library("GK", "Dhaka", 1200);
+            Console.WriteLine();
+            Console.WriteLine();
+            l.AddBook(b);
+            Console.WriteLine();
+            Console.WriteLine("Added Book Information");
+            l.ShowInfo();
         }
     }
 }
