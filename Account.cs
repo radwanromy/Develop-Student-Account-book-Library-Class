@@ -38,7 +38,7 @@ namespace Lab_6
             balance += amount;
 
         }
-        virtual public void Withdraw(double amount)
+        public void Withdraw(double amount)
         {
             if (amount < balance)
             {
@@ -47,7 +47,20 @@ namespace Lab_6
             else
                 Console.WriteLine("Insufficient Balance");
         }
-        virtual public void ShowInfo()
+        public void Transfer(double amount , string accNo)
+        {
+            if (amount < balance)
+            {
+                balance -= amount;
+                Console.Write(amount+"Ammount ");
+                Console.WriteLine("added the amount in account number"+accNo);
+            }
+            else
+                Console.WriteLine("Insufficient Balance");
+
+        }
+
+        public void ShowInfo()
         {
             Console.WriteLine("Name: " + name);
             Console.WriteLine("Account Number: " + accNo);

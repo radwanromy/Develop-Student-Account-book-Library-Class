@@ -17,10 +17,11 @@ namespace Lab_6
 
             s.ShowInfo();
             Console.WriteLine();
-            Console.WriteLine("Customer and Account Information");
+            Console.WriteLine("Account Information");
             Console.WriteLine();
             Console.WriteLine();
-
+            Account a = new Account("Radwan","1212",11000);
+            a.ShowInfo();
         }
     }
 }
